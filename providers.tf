@@ -7,13 +7,6 @@ terraform {
   required_version = ">=0.13"
 }
 
-locals {
-  labels = length(keys(var.labels)) >0 ? var.labels: {
-    "env"=var.env_name
-    "project"="undefined"
-  }
-}
-
 provider "yandex" {
   token     = var.yc_token
   cloud_id  = var.yc_cloud_id
