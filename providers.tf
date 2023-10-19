@@ -3,6 +3,7 @@ terraform {
     yandex = {
       source = "yandex-cloud/yandex"
       version = "0.100.0"
+    }
     yandex = {
       source = "hashicorp/template"
       version = "2.2.0"
